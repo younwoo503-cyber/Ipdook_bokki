@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>메인 페이지</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <header class="header">
+            <a href="index.html" class="logo">
+                <img src="images/logo.png" alt="로고">
+            </a>
+
+            <button class="menu-btn" id="menuOpen" aria-label="메뉴 열기">
+                <i data-lucide="menu"></i>
+            </button>
+        </header>
+
+
+        <!-- SIDE MENU BACKGROUND -->
+        <div class="menu-overlay" id="menuOverlay"></div>
+
+        <!-- SIDE MENU -->
+        <nav class="side-menu" id="sideMenu">
+
+            <div class="side-menu-header">
+                <span>MENU</span>
+
+                <button class="menu-close" id="menuClose" aria-label="메뉴 닫기">
+                    <i data-lucide="x"></i>
+                </button>
+            </div>
+
+            <ul class="menu-list">
+                <li>
+                    <a href="sub/lists/list.html">리스트페이지</a>
+                </li>
+
+                <li>
+                    <a href="sub/detail/detail.html">상세페이지</a>
+                </li>
+
+                <li>
+                    <a href="sub/payment/payment.html">결제페이지</a>
+                </li>
+
+                <li>
+                    <a href="sub/payment_finish/payment_finish.html">결제</a>
+                </li>
+            </ul>
+
+        </nav>
+
+
+        <!-- HERO -->
+        <section class="hero">
+            <img src="images/hero.jpg" alt="메인 배너">
+        </section>
+
+
+        <!-- SECTION 1 : ORDER -->
+        <section class="section-1">
+
+            <a href="sub/lists/list.html" class="order-btn delivery-btn">
+                배달 주문하기
+            </a>
+
+            <div class="order-btn-group">
+                <a href="#" class="order-btn">
+                    전화 주문
+                </a>
+
+                <a href="#" class="order-btn">
+                    쿠폰 사용
+                </a>
+            </div>
+
+        </section>
+
+
+        <!-- SECTION 2 : RECOMMEND MENU -->
+        <section class="section-2">
+
+            <div class="section-inner">
+
+                <h2 class="section-title">추천 메뉴</h2>
+
+                <div class="hashtag-group">
+                    <button class="hashtag active"># 해시태그1</button>
+                    <button class="hashtag"># 해시태그2</button>
+                    <button class="hashtag"># 해시태그3</button>
+                </div>
+
+                <div class="recommend-list">
+
+                    <a href="#" class="recommend-card side-card">
+                        <div class="recommend-image"></div>
+                    </a>
+
+                    <a href="#" class="recommend-card main-card">
+
+                        <div class="recommend-info">
+                            <p class="recommend-best">BEST 1</p>
+                            <h3>떡볶이 타이틀 작성</h3>
+                            <span class="detail-btn">주문하기</span>
+                        </div>
+
+                        <div class="recommend-image"></div>
+
+                    </a>
+
+                    <a href="#" class="recommend-card side-card">
+                        <div class="recommend-image"></div>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECTION 3 : MENU -->
+        <section class="section-3">
+
+            <div class="section-inner">
+
+                <h2 class="section-title">메뉴</h2>
+
+                <div class="hashtag-group">
+                    <button class="hashtag active">탭메뉴 1</button>
+                    <button class="hashtag">탭메뉴 2</button>
+                    <button class="hashtag">탭메뉴 3</button>
+                </div>
+
+                <div class="menu-list">
+
+                    <a href="#" class="menu-item">
+                        <div class="menu-image"></div>
+                        <h3>떡볶이 타이틀 작성</h3>
+                    </a>
+
+                    <a href="#" class="menu-item">
+                        <div class="menu-image"></div>
+                        <h3>떡볶이 타이틀 작성</h3>
+                    </a>
+
+                    <a href="#" class="menu-item">
+                        <div class="menu-image"></div>
+                        <h3>떡볶이 타이틀 작성</h3>
+                    </a>
+
+                    <a href="#" class="menu-item">
+                        <div class="menu-image"></div>
+                        <h3>떡볶이 타이틀 작성</h3>
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- SECTION 4 : EVENT -->
+        <section class="section-4">
+
+            <div class="section-inner">
+
+                <h2 class="section-title">이벤트</h2>
+
+                <p class="event-description">
+                    해당 추가되는 임의적인 이벤트를 만나보세요!
+                </p>
+
+                <div class="event-tab">
+                    <button class="event-tab-item active">진행중</button>
+                    <button class="event-tab-item">종료</button>
+                    <button class="event-tab-item">당첨자</button>
+                </div>
+
+                <a href="#" class="event-card">
+
+                    <div class="event-image">
+                        <img src="images/event.jpg" alt="이벤트 이미지">
+                    </div>
+
+                    <div class="event-info">
+
+                        <p class="event-subtitle">
+                            [할인중 이벤트]
+                        </p>
+
+                        <h3 class="event-title">
+                            배달 추가되는 임의적인 이벤트 내역입니다
+                            자세한 내용은 이동버튼
+                        </h3>
+
+                        <p class="event-date">
+                            2026.11.23~2025.12.31
+                        </p>
+
+                    </div>
+
+                </a>
+
+            </div>
+
+        </section>
+
+    </div>
+
+
+    <!-- JAVASCRIPT -->
+    <script>
+
+        // 메뉴 요소 선택
+        const menuOpen = document.getElementById('menuOpen');
+        const menuClose = document.getElementById('menuClose');
+        const sideMenu = document.getElementById('sideMenu');
+        const menuOverlay = document.getElementById('menuOverlay');
+
+        // 메뉴 열기
+        menuOpen.addEventListener('click', function() {
+            sideMenu.classList.add('active');
+            menuOverlay.classList.add('active');
+            document.body.classList.add('menu-open');
+        });
+
+        // 메뉴 닫기
+        function closeMenu() {
+            sideMenu.classList.remove('active');
+            menuOverlay.classList.remove('active');
+            document.body.classList.remove('menu-open');
+        }
+
+        // 닫기 버튼 클릭
+        menuClose.addEventListener('click', closeMenu);
+
+        // 메뉴 바깥 영역 클릭
+        menuOverlay.addEventListener('click', closeMenu);
+
+        // 메뉴 링크 클릭
+        const sideMenuLinks = sideMenu.querySelectorAll('a');
+
+        sideMenuLinks.forEach(function(link) {
+            link.addEventListener('click', closeMenu);
+        });
+
+        // Lucide 아이콘 실행
+        lucide.createIcons();
+
+    </script>
+
+</body>
+</html>
